@@ -1,0 +1,8 @@
+<div class="p-2">
+  <h6 class="text-center">Online users ({{users.length}})</h6>
+  <div>
+    <div *ngFor="let user of users" class="text-center pb-2">
+      <a href="javascript:void(0)" >{{user.pseudo}}</a>
+    </div>
+  </div>
+</div>

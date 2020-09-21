@@ -1,0 +1,8 @@
+<div class="col-12  border border-info  overflow-auto">
+    <div id="messages">
+      <div *ngFor="let message of messages">
+        <p><a href="javascript:void(0);">{{message.user.pseudo}}</a> | {{ message.date | date:'dd/MM/yyyy' | uppercase }} ({{ message.date | date:'HH:mm' | uppercase }})</p>
+        <p class="message border p-3">{{ message.message }}</p>
+      </div>
+    </div>
+</div>

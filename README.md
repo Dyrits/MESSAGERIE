@@ -1,5 +1,29 @@
 # Messagerie
 
+# A propos de ces travaux pratiques
+
+### Cursus
+ENI | LE DÉVELOPPEMENT FRONT END AVEC JAVASCRIPT  
+TRAVAUX PRATIQUE : Module 6 - Les bases d'Angular
+
+### [Description des travaux pratiques par l'ENI](https://github.com/Dyrits/LES-FONDAMENTAUX-DU-JAVASCRIPT/blob/master/Module%2001%20-%20%C3%89nonc%C3%A9%20TP%2001%20-%20Les%20fondamentaux%20du%20Javascript.pdf)
+
+### Technologies
+- JavaScript
+- Angular
+
+### Statut
+Completed
+
+#### Date de la dernière mise à jour
+21/09/2020  
+(README | 21/09/2020)
+
+
+---
+
+# Angular
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
 ## Development server

@@ -4,21 +4,23 @@
 
 ### Cursus
 ENI | LE DÉVELOPPEMENT FRONT END AVEC JAVASCRIPT  
-TRAVAUX PRATIQUE : Module 6 - Les bases d'Angular
+TRAVAUX PRATIQUES : Module 6 - Les bases d'Angular
 
-### [Description des travaux pratiques par l'ENI](https://github.com/Dyrits/LES-FONDAMENTAUX-DU-JAVASCRIPT/blob/master/Module%2001%20-%20%C3%89nonc%C3%A9%20TP%2001%20-%20Les%20fondamentaux%20du%20Javascript.pdf)
+### Description des travaux pratiques par l'ENI
+[Messagerie](https://github.com/Dyrits/MESSAGERIE/blob/master/Module%2006%20-%20%C3%89nonc%C3%A9%20TP%2001%20-%20Messagerie.pdf)
 
 ### Technologies
+- HTML
+- Bootstrap
 - JavaScript
 - Angular
 
 ### Statut
-Completed
+Messagerie - Completed
 
 #### Date de la dernière mise à jour
 21/09/2020  
 (README | 21/09/2020)
-
 
 ---
 

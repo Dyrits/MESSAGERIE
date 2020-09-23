@@ -7,8 +7,8 @@ ENI | LE DÉVELOPPEMENT FRONT END AVEC JAVASCRIPT
 TRAVAUX PRATIQUES : Module 6 - Les bases d'Angular
 
 ### Description des travaux pratiques par l'ENI
-[Messagerie](https://github.com/Dyrits/MESSAGERIE/blob/master/Module%2006%20-%20%C3%89nonc%C3%A9%20TP%2001%20-%20Messagerie.pdf)
-[Messagerie (Evolution 1)](https://github.com/Dyrits/MESSAGERIE/blob/master/Module%2006%20-%20%C3%89nonc%C3%A9%20TP%2001%20-%20Messagerie.pdf)
+[Messagerie](https://github.com/Dyrits/MESSAGERIE/blob/master/Module%2006%20-%20%C3%89nonc%C3%A9%20TP%2001%20-%20Messagerie.pdf)  
+[Messagerie (Evolution 1)](https://github.com/Dyrits/MESSAGERIE/blob/master/Module%2006%20-%20%C3%89nonc%C3%A9%20TP%2002%20-%20Messagerie%20(%C3%A9volution%201).pdf)
 
 ### Technologies
 - HTML

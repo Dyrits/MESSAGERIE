@@ -6,6 +6,9 @@ import { HeaderComponent } from './header/header.component';
 import { MessagesComponent } from './messages/messages.component';
 import { UsersComponent } from './users/users.component';
 import { MessageBoxComponent } from './message-box/message-box.component';
+import {MessageService} from './services/message.service';
+import {UserService} from './services/user.service';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,9 +20,10 @@ import { MessageBoxComponent } from './message-box/message-box.component';
     UsersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [MessageService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

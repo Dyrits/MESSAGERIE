@@ -8,6 +8,7 @@ TRAVAUX PRATIQUES : Module 6 - Les bases d'Angular
 
 ### Description des travaux pratiques par l'ENI
 [Messagerie](https://github.com/Dyrits/MESSAGERIE/blob/master/Module%2006%20-%20%C3%89nonc%C3%A9%20TP%2001%20-%20Messagerie.pdf)
+[Messagerie (Evolution 1)](https://github.com/Dyrits/MESSAGERIE/blob/master/Module%2006%20-%20%C3%89nonc%C3%A9%20TP%2001%20-%20Messagerie.pdf)
 
 ### Technologies
 - HTML
@@ -16,11 +17,12 @@ TRAVAUX PRATIQUES : Module 6 - Les bases d'Angular
 - Angular
 
 ### Statut
-Messagerie - Completed
+Messagerie - Terminée
+Messagerie (Evolution 1) - Terminée
 
 #### Date de la dernière mise à jour
-21/09/2020  
-(README | 21/09/2020)
+23/09/2020  
+(README | 23/09/2020)
 
 ---
 

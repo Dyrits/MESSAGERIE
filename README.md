@@ -1,1 +1,44 @@
-IyBNZXNzYWdlcmllCgpBIG1lc3NhZ2luZyBmcm9udCBlbmQgYnVpbHQgd2l0aCBBbmd1bGFyLCBhcyBwcmFjdGljYWwgd29yayBmb3IgYW4gRU5JIGNvdXJzZS4KCiMjIEFib3V0IFRoZSBQcm9qZWN0CgpQcmFjdGljYWwgd29yayBmb3IgdGhlIEVOSSBjb3Vyc2UgIkxlIGTDqXZlbG9wcGVtZW50IGZyb250IGVuZCBhdmVjIEphdmFTY3JpcHQiIChNb2R1bGUgNiAtIExlcyBiYXNlcyBkJ0FuZ3VsYXIpLiBUaGUgb3JpZ2luYWwgYXNzaWdubWVudHMgKGluIEZyZW5jaCkgYXJlIGF2YWlsYWJsZSBpbiB0aGUgcmVwb3NpdG9yeToKCi0gW01lc3NhZ2VyaWVdKGh0dHBzOi8vZ2l0aHViLmNvbS9EeXJpdHMvTUVTU0FHRVJJRS9ibG9iL21hc3Rlci9Nb2R1bGUlMjAwNiUyMC0lMjAlQzMlODlub25jJUMzJUE5JTIwVFAlMjAwMSUyMC0lMjBNZXNzYWdlcmllLnBkZikKLSBbTWVzc2FnZXJpZSAow6l2b2x1dGlvbiAxKV0oaHR0cHM6Ly9naXRodWIuY29tL0R5cml0cy9NRVNTQUdFUklFL2Jsb2IvbWFzdGVyL01vZHVsZSUyMDA2JTIwLSUyMCVDMyU4OW5vbmMlQzMlQTklMjBUUCUyMDAyJTIwLSUyME1lc3NhZ2VyaWUlMjAoJUMzJUE5dm9sdXRpb24lMjAxKS5wZGYpCgojIyMgU3RhdHVzCgpGcm9tIHRoZSBhdXRob3IncyBub3RlczoKCi0gTWVzc2FnZXJpZSAtIENvbXBsZXRlZAotIE1lc3NhZ2VyaWUgKMOpdm9sdXRpb24gMSkgLSBDb21wbGV0ZWQKCiMjIEJ1aWx0IFdpdGgKCi0gQW5ndWxhciAxMCAvIFR5cGVTY3JpcHQKLSBCb290c3RyYXAKLSBIVE1MIC8gQ1NTCgojIyBHZXR0aW5nIFN0YXJ0ZWQKCiMjIyBQcmVyZXF1aXNpdGVzCgotIE5vZGUuanMKLSBUaGUgQW5ndWxhciBDTEkgKGBucG0gaW5zdGFsbCAtZyBAYW5ndWxhci9jbGlgKQoKIyMjIEluc3RhbGxhdGlvbgoKLSBJbnN0YWxsIHRoZSBkZXBlbmRlbmNpZXMgd2l0aCBgbnBtIGluc3RhbGxgLgotIFN0YXJ0IHRoZSBkZXZlbG9wbWVudCBzZXJ2ZXIgd2l0aCBgbmcgc2VydmVgIGFuZCBuYXZpZ2F0ZSB0byBgaHR0cDovL2xvY2FsaG9zdDo0MjAwL2AuIFRoZSBhcHBsaWNhdGlvbiByZWxvYWRzIGF1dG9tYXRpY2FsbHkgd2hlbiBhIHNvdXJjZSBmaWxlIGNoYW5nZXMuCi0gQnVpbGQgdGhlIHByb2plY3Qgd2l0aCBgbmcgYnVpbGRgIChhcnRpZmFjdHMgaW4gYGRpc3QvYCksIHJ1biB0aGUgdW5pdCB0ZXN0cyB3aXRoIGBuZyB0ZXN0YCAoS2FybWEpIGFuZCB0aGUgZW5kLXRvLWVuZCB0ZXN0cyB3aXRoIGBuZyBlMmVgIChQcm90cmFjdG9yKS4KCiMjIExpY2Vuc2UKCk5vIGxpY2Vuc2UgZmlsZSBpcyBwcmVzZW50IGluIHRoaXMgcmVwb3NpdG9yeS4KCiMjIENvbnRhY3QKCkR5bGFuIEouIEdlcnJpdHMgLSBbR2l0SHViXShodHRwczovL2dpdGh1Yi5jb20vRHlyaXRzKQo=
+# Messagerie
+
+A messaging front end built with Angular, as practical work for an ENI course.
+
+## About The Project
+
+Practical work for the ENI course "Le développement front end avec JavaScript" (Module 6 - Les bases d'Angular). The original assignments (in French) are available in the repository:
+
+- [Messagerie](https://github.com/Dyrits/MESSAGERIE/blob/master/Module%2006%20-%20%C3%89nonc%C3%A9%20TP%2001%20-%20Messagerie.pdf)
+- [Messagerie (évolution 1)](https://github.com/Dyrits/MESSAGERIE/blob/master/Module%2006%20-%20%C3%89nonc%C3%A9%20TP%2002%20-%20Messagerie%20(%C3%A9volution%201).pdf)
+
+### Status
+
+From the author's notes:
+
+- Messagerie - Completed
+- Messagerie (évolution 1) - Completed
+
+## Built With
+
+- Angular 10 / TypeScript
+- Bootstrap
+- HTML / CSS
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- The Angular CLI (`npm install -g @angular/cli`)
+
+### Installation
+
+- Install the dependencies with `npm install`.
+- Start the development server with `ng serve` and navigate to `http://localhost:4200/`. The application reloads automatically when a source file changes.
+- Build the project with `ng build` (artifacts in `dist/`), run the unit tests with `ng test` (Karma) and the end-to-end tests with `ng e2e` (Protractor).
+
+## License
+
+No license file is present in this repository.
+
+## Contact
+
+Dylan J. Gerrits - [GitHub](https://github.com/Dyrits)

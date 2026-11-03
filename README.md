@@ -42,3 +42,11 @@ No license file is present in this repository.
 ## Contact
 
 Dylan J. Gerrits - [GitHub](https://github.com/Dyrits)
+
+## Targeted dependency verification
+
+The November 3, 2026 update uses Node.js 26 LTS, patched compatible transitive packages, and a Webpack 4.47 override so production builds work without an OpenSSL legacy-provider flag. Angular remains on its old 10.x line; this is not a supported-framework migration. Other overrides patch form-data, json-schema, loader-utils, websocket-driver, and xmlhttprequest-ssl.
+
+Fresh `npm ci`, `npm run build -- --configuration=production`, and 10 ChromeHeadless Karma tests pass. Karma now explicitly loads its Angular plugin; stale test fixtures now import the real app/forms modules, and a message submission/reset test exercises the existing services. Application source behavior is unchanged. Browser message submission and desktop/mobile pixels were checked. The existing narrow online-users column and horizontal overflow on small screens remain layout limitations, not a claim of mobile polish. Messages and users remain local in-memory data.
+
+Local npm audit changes from 176 package findings (11 critical, 76 high) to 179 (1 critical, 74 high, 87 moderate, 17 low). Distinct advisory IDs fall from 241 to 208 with no new IDs. The remaining critical finding is an old tar dependency; many other findings remain in this legacy toolchain. Package counts can rise as advisories propagate through additional paths. No deployment or external account action was performed.

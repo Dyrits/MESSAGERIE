@@ -1,12 +1,11 @@
 import { TestBed } from '@angular/core/testing';
+import { AppModule } from './app.module';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      imports: [AppModule],
     }).compileComponents();
   });
 
@@ -26,6 +25,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('Messagerie app is running!');
+    expect(compiled.querySelector('app-message-box form')).toBeTruthy();
+    expect(compiled.querySelector('app-users')).toBeTruthy();
   });
 });

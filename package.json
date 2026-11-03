@@ -52,6 +52,7 @@
     "loader-utils": "^2.0.4",
     "websocket-driver": "^0.7.5",
     "xmlhttprequest-ssl": "^1.6.3",
-    "node-forge": "^1.4.1"
+    "node-forge": "^1.4.1",
+    "tar": "^7.5.22"
   }
 }

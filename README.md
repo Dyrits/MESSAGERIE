@@ -67,6 +67,10 @@ Local audit changes from 155 to 30 package findings, high 63 to 0 and critical 0
 
 Messages remain in memory and users are not authenticated. Existing mobile layout defects persist: the users column is too narrow and text overlaps nearby content at 430px. No mobile-ready or hosted-service claim is made, and no deployment was run. Migration sources: https://angular.dev/reference/releases and https://blog.angular.dev/the-future-is-standalone-475d7edbc706 .
 
-### SockJS UUID follow-up
+### Angular 22 follow-up
 
-SockJS's UUID dependency is scoped to patched CommonJS-compatible UUID 11.1.1. A real SockJS connection and WebSocket echo test checks UUID-backed connection creation (`npm run test:sockjs`), in addition to clean installation, build, Karma and Playwright checks. Local audit drops from 30 to 26 moderate package findings and from two to one distinct advisory (Minimatch). No framework major change is needed for this fix.
+Angular 22.2 uses TypeScript 6.0 and the application builder. Official migrations preserve eager change detection and the existing non-strict template behavior. Output remains `dist/Messagerie` for existing serving commands. Karma still runs in Chrome; its application builder discovers tests, replacing the old Webpack-only `require.context` bootstrap. The optional Vitest migration is deferred.
+
+SockJS and its UUID consumer are no longer installed after replacing the Webpack build package. The scoped override and consumer smoke test were removed as obsolete, rather than adding SockJS back only to run a test.
+
+Clean ci, production build, 10 Chrome tests, TypeScript, lint (two existing unused-variable warnings) and the Playwright two-message/reset check pass. Audit falls from 26 to 17 moderate package findings, still one distinct advisory (Minimatch), with no new IDs. The in-memory, unauthenticated app and the existing mobile users/message overlap are unchanged. No production deployment is part of this update.

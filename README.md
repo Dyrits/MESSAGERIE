@@ -66,3 +66,7 @@ Clean npm ci, production build, ten ChromeHeadless tests, typecheck and ESLint p
 Local audit changes from 155 to 30 package findings, high 63 to 0 and critical 0. Distinct advisory IDs fall from 137 to 2 with no new IDs; residual Minimatch and UUID findings remain. Package totals can differ from earlier scans as advisory data changes. Scoped Glob 14.0.3 overrides are tested through builds, Karma and Playwright. This is not an all-clear.
 
 Messages remain in memory and users are not authenticated. Existing mobile layout defects persist: the users column is too narrow and text overlaps nearby content at 430px. No mobile-ready or hosted-service claim is made, and no deployment was run. Migration sources: https://angular.dev/reference/releases and https://blog.angular.dev/the-future-is-standalone-475d7edbc706 .
+
+### SockJS UUID follow-up
+
+SockJS's UUID dependency is scoped to patched CommonJS-compatible UUID 11.1.1. A real SockJS connection and WebSocket echo test checks UUID-backed connection creation (`npm run test:sockjs`), in addition to clean installation, build, Karma and Playwright checks. Local audit drops from 30 to 26 moderate package findings and from two to one distinct advisory (Minimatch). No framework major change is needed for this fix.

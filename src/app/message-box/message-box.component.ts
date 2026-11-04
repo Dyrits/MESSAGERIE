@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import {UntypedFormBuilder, UntypedFormGroup, Validators} from '@angular/forms';
 import {MessageService} from '../services/message.service';
 import {UserService} from '../services/user.service';
@@ -9,10 +9,11 @@ import {Message} from '../classes/Message';
   standalone: false,
   selector: 'app-message-box',
   templateUrl: './message-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./message-box.component.css']
 })
 export class MessageBoxComponent implements OnInit {
-  messageForm: UntypedFormGroup;
+  messageForm!: UntypedFormGroup;
 
   constructor(private messageService: MessageService, private userService: UserService, private formBuilder: UntypedFormBuilder) {
     this.create();
@@ -42,11 +43,11 @@ export class MessageBoxComponent implements OnInit {
 
   onClick(): void {
     if (this.validForm()) {
-      const user: User = new User(this.messageForm.get('user').value);
+      const user: User = new User(this.messageForm.controls['user'].value);
       this.userService.addUser(user);
       this.messageService.addMessage(new Message(
         user,
-        this.messageForm.get('message').value,
+        this.messageForm.controls['message'].value,
         new Date()
       ));
       this.messageForm.reset();

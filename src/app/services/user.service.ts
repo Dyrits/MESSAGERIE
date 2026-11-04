@@ -15,7 +15,7 @@ export class UserService {
     this.emitter.emit(this._users.slice());
   }
 
-  getUserByPseudo(pseudo: string): User {
+  getUserByPseudo(pseudo: string): User | undefined {
     return this._users.find(user => user.pseudo === pseudo);
   }
 

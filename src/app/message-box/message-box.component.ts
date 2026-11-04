@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormBuilder, UntypedFormGroup, Validators} from '@angular/forms';
 import {MessageService} from '../services/message.service';
 import {UserService} from '../services/user.service';
 import {User} from '../classes/User';
 import {Message} from '../classes/Message';
 
 @Component({
+  standalone: false,
   selector: 'app-message-box',
   templateUrl: './message-box.component.html',
   styleUrls: ['./message-box.component.css']
 })
 export class MessageBoxComponent implements OnInit {
-  messageForm: FormGroup;
+  messageForm: UntypedFormGroup;
 
-  constructor(private messageService: MessageService, private userService: UserService, private formBuilder: FormBuilder) {
+  constructor(private messageService: MessageService, private userService: UserService, private formBuilder: UntypedFormBuilder) {
     this.create();
   }
 

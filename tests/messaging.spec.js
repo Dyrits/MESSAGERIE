@@ -1,0 +1,20 @@
+const { test, expect } = require('@playwright/test');
+test('messages and users update, validation resets', async ({page}, testInfo) => {
+  await page.goto('/');
+  await expect(page.getByRole('button',{name:'Validate',exact:true})).toBeDisabled();
+  await page.locator('#user').fill('Alice');
+  await page.locator('#message').fill('First fixture message');
+  await page.getByRole('button',{name:'Validate',exact:true}).click();
+  await expect(page.locator('app-messages')).toContainText('First fixture message');
+  await expect(page.locator('app-users')).toContainText('Alice');
+  await expect(page.locator('#user')).toHaveValue('');
+  await expect(page.getByRole('button',{name:'Validate',exact:true})).toBeDisabled();
+  await page.locator('#user').fill('Bob');
+  await page.locator('#message').fill('Second fixture message');
+  await page.getByRole('button',{name:'Validate',exact:true}).click();
+  await expect(page.locator('app-users')).toContainText('Bob');
+  await expect(page.locator('app-messages')).toContainText('Second fixture message');
+  await page.screenshot({path:testInfo.outputPath('desktop.png')});
+  await page.setViewportSize({width:430,height:932});
+  await page.screenshot({path:testInfo.outputPath('mobile.png')});
+});

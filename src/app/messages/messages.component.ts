@@ -4,6 +4,7 @@ import {User} from '../classes/User';
 import {MessageService} from '../services/message.service';
 
 @Component({
+  standalone: false,
   selector: 'app-messages',
   templateUrl: './messages.component.html',
   styleUrls: ['./messages.component.css']
